@@ -1,0 +1,34 @@
+{
+  "name": "Maryam Usman",
+  "title": "Nutrition and Dietetics Tutor",
+  "photo": "https://images.unsplash.com/photo-1582550945154-66ea8fff25e1?crop=faces&fit=crop&w=400&h=400",
+  "location": "Gombe State, Nigeria",
+  "education": {
+    "institution": "Gombe State College of Health Sciences and Technology",
+    "degree": "Diploma in Nutrition and Dietetics",
+    "graduationYear": 2025
+  },
+  "bio": "Maryam Usman is a passionate Nutrition and Dietetics tutor dedicated to improving community health through balanced diets and lifestyle awareness. She trains students to understand the science of nutrition and its impact on disease prevention and maternal health.",
+  "skills": [
+    "Community Nutrition",
+    "Diet Planning",
+    "Nutritional Assessment",
+    "Maternal & Infant Nutrition",
+    "Public Health Education"
+  ],
+  "testimonials": [
+    {
+      "name": "Halima Yusuf",
+      "comment": "Maryam has a calm teaching style that motivates us to apply nutrition science in daily life."
+    },
+    {
+      "name": "Saidu Idris",
+      "comment": "Her lessons are always practical — she connects what we learn in class to real dietary challenges faced in communities."
+    }
+  ],
+  "socials": {
+    "linkedin": "https://linkedin.com/in/maryam-usman",
+    "email": "mailto:maryam.usman@consultancyfirm.ng",
+    "whatsapp": "https://wa.me/2348109876543"
+  }
+}
