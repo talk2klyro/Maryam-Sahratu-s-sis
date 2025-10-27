@@ -1,27 +1,27 @@
 {
   "name": "Maryam Usman",
-  "role": "Behavioral Health Specialist | Wellness Strategist",
+  "role": "Behavioral Health Specialist | Mental Wellness Advocate",
   "photo": "https://i.postimg.cc/g01DnKcd/Black-and-Green-Modern-Minimalist-Consultancy-Business-Logo-20251017-004347-0000.png",
-  "button_url": "https://maryam-usman.vercel.app",
+  "button_url": "https://consultancy-firm.vercel.app",
   "theme": {
     "primary": "#6D28D9",
     "secondary": "#F5F3FF",
-    "accent": "#8B5CF6",
+    "accent": "#A78BFA",
     "gradient": "linear-gradient(135deg, #C4B5FD, #A78BFA)"
   },
-  "bio": "Maryam Usman is a Behavioral Health Specialist dedicated to building healthier thinking cultures in communities. Her work focuses on emotional literacy, stress resilience, and the integration of behavioral insights into public health education. As part of the Consultancy Firm’s wellness branch, she designs programs that connect self-awareness with social well-being, empowering people to sustain long-term mental balance.",
+  "bio": "Maryam Usman is a Behavioral Health Specialist passionate about mental wellness, empathy, and community recovery. As one of the Consultancy Firm’s most creative young professionals, she blends evidence-based mental-health practice with cultural understanding to help communities heal and grow. Her work focuses on emotional literacy, youth resilience, and family-based therapy initiatives across Nigeria.",
   "cards": [
     {
-      "title": "Focus Areas",
-      "content": "Behavioral Therapy Education, Emotional Intelligence Training, and Preventive Mental Health Programs."
+      "title": "Core Expertise",
+      "content": "Behavioral therapy, stress management, trauma support, and emotional intelligence training."
     },
     {
-      "title": "Community Work",
-      "content": "Leads workshops on family communication and self-regulation strategies. Coordinates youth wellness ambassadors across Northern Nigeria."
+      "title": "Community Programs",
+      "content": "Facilitates workshops on mental resilience for women and adolescents; designed peer-support circles for youth centers."
     },
     {
-      "title": "Vision",
-      "content": "To establish a mental health literacy network that promotes psychological safety and evidence-based wellness culture across Nigeria."
+      "title": "Professional Vision",
+      "content": "To establish a nationwide mental-health education network where wellness is viewed as strength and self-leadership."
     }
   ],
   "socials": {
