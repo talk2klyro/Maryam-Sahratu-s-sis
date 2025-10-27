@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Maryam Usman | Community Health Extension worker CHEW </title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main id="profile"></main>
+  <main class="card-container">
+    <section class="photo-section">
+      <img id="profile-photo" class="profile-img" alt="Maryam Usman" />
+      <h1 id="name"></h1>
+      <h2 id="role"></h2>
+      <p id="bio" class="bio"></p>
+      <a id="visit-btn" class="main-btn" target="_blank">Visit Profile</a>
+    </section>
+
+    <section id="cards" class="info-section"></section>
+
+    <footer class="socials">
+      <a id="fb" target="_blank">Facebook</a>
+      <a id="ig" target="_blank">Instagram</a>
+      <a id="x" target="_blank">X (formerly Twitter)</a>
+    </footer>
+  </main>
+
   <script src="app.js"></script>
 </body>
 </html>
