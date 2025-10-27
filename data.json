@@ -1,34 +1,32 @@
 {
   "name": "Maryam Usman",
-  "title": "Nutrition and Dietetics Tutor",
-  "photo": "https://images.unsplash.com/photo-1582550945154-66ea8fff25e1?crop=faces&fit=crop&w=400&h=400",
-  "location": "Gombe State, Nigeria",
-  "education": {
-    "institution": "Gombe State College of Health Sciences and Technology",
-    "degree": "Diploma in Nutrition and Dietetics",
-    "graduationYear": 2025
+  "role": "Health Communication Strategist | Digital Wellness Advocate",
+  "photo": "https://i.postimg.cc/g01DnKcd/Black-and-Green-Modern-Minimalist-Consultancy-Business-Logo-20251017-004347-0000.png",
+  "button_url": "https://maryam-insights.vercel.app",
+  "theme": {
+    "primary": "#6D28D9",
+    "secondary": "#F5F3FF",
+    "accent": "#8B5CF6",
+    "gradient": "linear-gradient(135deg, #6D28D9, #C4B5FD)"
   },
-  "bio": "Maryam Usman is a passionate Nutrition and Dietetics tutor dedicated to improving community health through balanced diets and lifestyle awareness. She trains students to understand the science of nutrition and its impact on disease prevention and maternal health.",
-  "skills": [
-    "Community Nutrition",
-    "Diet Planning",
-    "Nutritional Assessment",
-    "Maternal & Infant Nutrition",
-    "Public Health Education"
-  ],
-  "testimonials": [
+  "bio": "Maryam Usman is a passionate health communication strategist focused on bridging digital engagement with real-world impact. Through creative media, she designs campaigns that make wellness information accessible, relatable, and culturally grounded for communities across Nigeria.",
+  "cards": [
     {
-      "name": "Halima Yusuf",
-      "comment": "Maryam has a calm teaching style that motivates us to apply nutrition science in daily life."
+      "title": "Expertise & Focus",
+      "content": "Digital health campaigns, storytelling for behavior change, and health media training for community workers."
     },
     {
-      "name": "Saidu Idris",
-      "comment": "Her lessons are always practical — she connects what we learn in class to real dietary challenges faced in communities."
+      "title": "Impact Projects",
+      "content": "Led the ‘Voices for Health’ digital storytelling initiative, empowering local educators to share preventive health messages through social media."
+    },
+    {
+      "title": "Personal Vision",
+      "content": "To establish a nationwide creative communication lab dedicated to innovative wellness education and youth-driven advocacy."
     }
   ],
   "socials": {
-    "linkedin": "https://linkedin.com/in/maryam-usman",
-    "email": "mailto:maryam.usman@consultancyfirm.ng",
-    "whatsapp": "https://wa.me/2348109876543"
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "x": "https://x.com/"
   }
 }
