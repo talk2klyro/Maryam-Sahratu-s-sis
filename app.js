@@ -1,52 +1,32 @@
-async function loadTutor() {
-  const response = await fetch("data.json");
-  const tutor = await response.json();
+fetch('data.json')
+  .then(response => response.json())
+  .then(data => {
+    document.body.style.background = data.theme.gradient;
+    const profile = document.getElementById('profile');
 
-  document.getElementById("tutor-profile").innerHTML = `
-    <section class="bg-white shadow-md rounded-2xl p-6 flex flex-col md:flex-row gap-8">
-      <img src="${tutor.photo}" alt="${tutor.name}" class="w-48 h-48 rounded-full object-cover border-4 border-indigo-100 mx-auto md:mx-0">
-      <div class="flex-1">
-        <h1 class="text-3xl font-bold text-indigo-700">${tutor.name}</h1>
-        <p class="text-gray-600">${tutor.title}</p>
-        <p class="mt-2 text-sm text-gray-500">${tutor.location}</p>
-
-        <div class="mt-4">
-          <h2 class="text-xl font-semibold">About</h2>
-          <p class="text-gray-700 mt-2">${tutor.bio}</p>
-        </div>
-
-        <div class="mt-4">
-          <h2 class="text-xl font-semibold">Education</h2>
-          <p class="text-gray-700 mt-1">${tutor.education.degree} — <span class="font-medium">${tutor.education.institution}</span> (${tutor.education.graduationYear})</p>
-        </div>
-
-        <div class="mt-4">
-          <h2 class="text-xl font-semibold">Skills</h2>
-          <div class="flex flex-wrap gap-2 mt-2">
-            ${tutor.skills.map(skill => `<span class="px-3 py-1 bg-indigo-50 text-indigo-700 text-sm rounded-full">${skill}</span>`).join("")}
-          </div>
-        </div>
-
-        <div class="mt-6">
-          <h2 class="text-xl font-semibold">Testimonials</h2>
-          <div class="mt-2 space-y-2">
-            ${tutor.testimonials.map(t => `
-              <div class="bg-gray-100 p-3 rounded-xl">
-                <p class="italic text-gray-600">"${t.comment}"</p>
-                <p class="text-sm text-right font-semibold text-indigo-600">– ${t.name}</p>
-              </div>
-            `).join("")}
-          </div>
-        </div>
-
-        <div class="mt-6 flex gap-4">
-          <a href="${tutor.socials.linkedin}" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg">LinkedIn</a>
-          <a href="${tutor.socials.whatsapp}" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg">WhatsApp</a>
-          <a href="${tutor.socials.email}" class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-lg">Email</a>
-        </div>
+    profile.innerHTML = `
+      <div class="card" style="border-color:${data.theme.primary}">
+        <img src="${data.photo}" alt="${data.name}" class="profile-img"/>
+        <h1 style="color:${data.theme.primary}">${data.name}</h1>
+        <h3>${data.role}</h3>
+        <p>${data.bio}</p>
+        <a href="${data.button_url}" class="btn" style="background:${data.theme.primary};color:white">Visit Page</a>
       </div>
-    </section>
-  `;
-}
 
-loadTutor();
+      <div class="cards">
+        ${data.cards.map(card => `
+          <div class="info-card" style="background:${data.theme.secondary};border-left:5px solid ${data.theme.accent}">
+            <h2>${card.title}</h2>
+            <p>${card.content}</p>
+          </div>
+        `).join('')}
+      </div>
+
+      <div class="socials">
+        <a href="${data.socials.facebook}" target="_blank">Facebook</a>
+        <a href="${data.socials.instagram}" target="_blank">Instagram</a>
+        <a href="${data.socials.x}" target="_blank">X</a>
+      </div>
+    `;
+  })
+  .catch(err => console.error('Error loading data:', err));
