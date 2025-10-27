@@ -1,27 +1,27 @@
 {
   "name": "Maryam Usman",
-  "role": "Health Communication Strategist | Digital Wellness Advocate",
+  "role": "Behavioral Health Specialist | Wellness Strategist",
   "photo": "https://i.postimg.cc/g01DnKcd/Black-and-Green-Modern-Minimalist-Consultancy-Business-Logo-20251017-004347-0000.png",
-  "button_url": "https://maryam-insights.vercel.app",
+  "button_url": "https://maryam-usman.vercel.app",
   "theme": {
     "primary": "#6D28D9",
     "secondary": "#F5F3FF",
     "accent": "#8B5CF6",
-    "gradient": "linear-gradient(135deg, #6D28D9, #C4B5FD)"
+    "gradient": "linear-gradient(135deg, #C4B5FD, #A78BFA)"
   },
-  "bio": "Maryam Usman is a passionate health communication strategist focused on bridging digital engagement with real-world impact. Through creative media, she designs campaigns that make wellness information accessible, relatable, and culturally grounded for communities across Nigeria.",
+  "bio": "Maryam Usman is a Behavioral Health Specialist dedicated to building healthier thinking cultures in communities. Her work focuses on emotional literacy, stress resilience, and the integration of behavioral insights into public health education. As part of the Consultancy Firm’s wellness branch, she designs programs that connect self-awareness with social well-being, empowering people to sustain long-term mental balance.",
   "cards": [
     {
-      "title": "Expertise & Focus",
-      "content": "Digital health campaigns, storytelling for behavior change, and health media training for community workers."
+      "title": "Focus Areas",
+      "content": "Behavioral Therapy Education, Emotional Intelligence Training, and Preventive Mental Health Programs."
     },
     {
-      "title": "Impact Projects",
-      "content": "Led the ‘Voices for Health’ digital storytelling initiative, empowering local educators to share preventive health messages through social media."
+      "title": "Community Work",
+      "content": "Leads workshops on family communication and self-regulation strategies. Coordinates youth wellness ambassadors across Northern Nigeria."
     },
     {
-      "title": "Personal Vision",
-      "content": "To establish a nationwide creative communication lab dedicated to innovative wellness education and youth-driven advocacy."
+      "title": "Vision",
+      "content": "To establish a mental health literacy network that promotes psychological safety and evidence-based wellness culture across Nigeria."
     }
   ],
   "socials": {
