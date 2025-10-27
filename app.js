@@ -1,31 +1,29 @@
+// === Maryam Usman Page Script ===
 fetch("data.json")
-  .then(response => response.json())
+  .then(res => res.json())
   .then(data => {
+    // Profile basics
+    document.getElementById("name").textContent = data.name;
+    document.getElementById("role").textContent = data.role;
+    document.getElementById("bio").textContent = data.bio;
+    document.getElementById("profile-photo").src = data.photo;
+    document.getElementById("visit-btn").href = data.button_url;
+
+    // Apply theme
     document.body.style.background = data.theme.gradient;
 
-    const profile = document.getElementById("profile");
-    profile.innerHTML = `
-      <section class="card-container" style="color:${data.theme.primary}">
-        <div class="photo-section">
-          <img src="${data.photo}" alt="${data.name}" class="profile-img">
-          <h1>${data.name}</h1>
-          <h2>${data.role}</h2>
-          <p class="bio">${data.bio}</p>
-          <a href="${data.button_url}" class="main-btn" style="background:${data.theme.primary};color:white">Visit Profile</a>
-        </div>
-        <div class="info-section">
-          ${data.cards.map(card => `
-            <div class="info-card" style="background:${data.theme.secondary}">
-              <h3 style="color:${data.theme.accent}">${card.title}</h3>
-              <p>${card.content}</p>
-            </div>
-          `).join("")}
-        </div>
-        <footer class="socials">
-          <a href="${data.socials.facebook}">Facebook</a>
-          <a href="${data.socials.instagram}">Instagram</a>
-          <a href="${data.socials.x}">X</a>
-        </footer>
-      </section>
-    `;
-  });
+    // Cards
+    const cardContainer = document.getElementById("cards");
+    data.cards.forEach(card => {
+      const div = document.createElement("div");
+      div.classList.add("info-card");
+      div.innerHTML = `<h3>${card.title}</h3><p>${card.content}</p>`;
+      cardContainer.appendChild(div);
+    });
+
+    // Social links
+    document.getElementById("fb").href = data.socials.facebook;
+    document.getElementById("ig").href = data.socials.instagram;
+    document.getElementById("x").href = data.socials.x;
+  })
+  .catch(err => console.error("Error loading tutor data:", err));
